@@ -2,12 +2,14 @@ const myImage = document.querySelector("img");
 
 myImage.addEventListener("click", () => {
   const mySrc = myImage.getAttribute("src");
-  if (mySrc === "images/test_image.png") {
+  
+  if (mySrc.endsWith("images/test_image.png")) {
     myImage.setAttribute("src", "images/test_image2.png");
   } else {
     myImage.setAttribute("src", "images/test_image.png");
   }
 });
+
 
 //personalsied welcome text
 let myButton = document.querySelector("button");
